@@ -4,7 +4,7 @@ document.getElementById('entriesText').addEventListener("click", function() {
 });
 
 window.onload = function() {
-    document.getElementById(footerDate.id).innerText = getDateYear();
+    document.getElementById(footerDate.id).innerText = getDateYear(); 
 
     document.getElementById(addHours.id).focus();
     document.getElementById(addHours.id).onkeypress = function(e) { LimitImputLength(e); };
