@@ -1,9 +1,21 @@
 var counter = 0;
+document.getElementById('entriesText').addEventListener("click", function() {
+    ShowHideCaption();
+});
+
 window.onload = function() {
+    document.getElementById(footerDate.id).innerText = getDateYear();
+
     document.getElementById(addHours.id).focus();
     document.getElementById(addHours.id).onkeypress = function(e) { LimitImputLength(e); };
     document.getElementById(addMins.id).onkeypress = function(e){ LimitImputLength(e); }
+    document.getElementById(btnExport.id).onclick = function(e){ ExportAsCSV(e); e.stopPropagation(); }
 };
+
+function getDateYear(e)
+{
+    return new Date().getFullYear();
+}
 
 function LimitImputLength (e)
 { 
@@ -150,6 +162,7 @@ function numberWithCommas(x) {
 
 function ShowHideItemToggle()
 {
+    
     // Show up the 'View all entries' button
     var itemisedTimeDiv = document.getElementById('itemisedTimes');
     var itemCount = itemisedTimeDiv.getElementsByClassName('time-inventory').length;
@@ -164,15 +177,31 @@ function ShowHideItemToggle()
         document.getElementById('btnEntriesToggle').style.display = "none";
         document.getElementById('demo').className = 'collapse';
     }
-    console.log('toggle triggered');
+
+    //ShowHideCaption();
+
+    //console.log('toggle triggered');
+}
+
+function ShowHideCaption() {
+    if (document.getElementById('demo').className == 'collapse in')
+    {
+        document.getElementById('entriesText').innerHTML = "View all entries";
+    }
+    else
+    {
+        document.getElementById('entriesText').innerHTML = "Hide all entries";
+    }
 }
 
 function AddANote() {
 
 }
 
-function ExportAsCSV()
+function ExportAsCSV(e)
 {
+    console.log(e.target.nodeName);
+
     // Add the times into a 2D array
     var itemisedTimeDiv = document.getElementById('itemisedTimes');
     var items = document.getElementsByClassName('time-inventory');
@@ -208,6 +237,8 @@ function ExportAsCSV()
     link.click();
     document.body.removeChild(link);
     //window.open(encodedUri);
+
+    e.preventDefault();
 }
 
 function toCSV(obj, separator) {
