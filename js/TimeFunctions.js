@@ -4,18 +4,13 @@ document.getElementById('entriesText').addEventListener("click", function() {
 });
 
 window.onload = function() {
-    document.getElementById(footerDate.id).innerText = getDateYear();
+    //document.getElementById(footerDate.id).innerText = getDateYear();
 
     document.getElementById(addHours.id).focus();
     document.getElementById(addHours.id).onkeypress = function(e) { LimitImputLength(e); };
     document.getElementById(addMins.id).onkeypress = function(e){ LimitImputLength(e); }
     document.getElementById(btnExport.id).onclick = function(e){ ExportAsCSV(e); e.stopPropagation(); }
 };
-
-function getDateYear(e)
-{
-    return new Date().getFullYear();
-}
 
 function LimitImputLength (e)
 { 
