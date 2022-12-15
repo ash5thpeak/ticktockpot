@@ -9,29 +9,34 @@
 
 
 <url>
-  <loc>http://www.ticktockpot.co.uk/</loc>
-  <lastmod>2019-01-27T22:00:57+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>http://ticktockpot.co.uk/</loc>
+<lastmod>2022-12-15T00:47:05+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.ticktockpot.co.uk/about.html</loc>
-  <lastmod>2019-01-27T21:58:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://ticktockpot.co.uk/index.html</loc>
+<lastmod>2022-12-15T00:47:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.ticktockpot.co.uk/faq.html</loc>
-  <lastmod>2019-01-27T21:58:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://ticktockpot.co.uk/about.html</loc>
+<lastmod>2022-12-15T00:47:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.ticktockpot.co.uk/terms-of-service.html</loc>
-  <lastmod>2019-01-27T21:58:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://ticktockpot.co.uk/faq.html</loc>
+<lastmod>2022-12-15T00:47:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.ticktockpot.co.uk/privacy.html</loc>
-  <lastmod>2019-01-27T21:58:16+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>http://ticktockpot.co.uk/terms-of-service.html</loc>
+<lastmod>2022-12-15T00:47:05+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://ticktockpot.co.uk/privacy.html</loc>
+<lastmod>2022-12-15T00:47:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 
 
